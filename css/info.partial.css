@@ -1,0 +1,60 @@
+
+.info-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 150px; 
+    margin-right: 150px; 
+    margin-top: 40px; 
+    text-align: center; 
+    background-color: #ddd9d95b;
+}
+
+.info-image-and-text {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-right: 25px; 
+}
+
+.info-text-container {
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+
+.free-shopping-container img,
+.natural-fabrics-container img,
+.discount-system-container img,
+.pay-after-container img {
+    width: 100px; 
+    height: 100px; 
+}
+
+
+.main-text-info {
+    font-weight: bold; 
+    font-size: 18px;
+    display: inline-block; 
+    text-align: center; 
+}
+
+.info-text {
+    font-size: 14px; 
+}
+
+
+@media (max-width: 768px) {
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        height: auto;
+        margin-left: 0px; 
+        margin-right: 0px; 
+    }
+}

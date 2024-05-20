@@ -1,0 +1,80 @@
+.bestsellers-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #ddd9d95b;
+}
+
+.bestsellers-title {
+    text-align: center;
+}
+
+.bestsellers-img-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.bestsellers-img {
+    position: relative;
+    flex: 0 0 33.333%;
+    width: 400px;
+    height: 500px;
+    margin-right: 20px;
+}
+
+.button-bestsellers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prev::before,
+.next::before {
+    font-family: Arial, sans-serif; 
+}
+
+.prev::before {
+    content: "\2039"; /* Символ "<" */
+}
+
+.next::before {
+    content: "\203A"; /* Символ ">" */
+}
+
+.prev,
+.next {
+    font-size: 50px; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .bestsellers-section {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        height: 200px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

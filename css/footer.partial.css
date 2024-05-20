@@ -1,0 +1,114 @@
+.footer {
+    background-color: #ddd9d95b;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 100px; 
+    height: 50px; 
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.footer .center-section-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.footer .links li {
+    margin: 5px 0;
+}
+
+.footer .links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer .contact-button {
+    padding: 10px 20px;
+    background-color: #c0a783;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.footer .contact-button:hover {
+    background-color: #b4956b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* Модальне вікно */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; 
+    border-radius: 4px;
+}
+
+/* Кнопка закриття */
+.close {
+    color: #aaa;
+    align-self: flex-end; 
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-content input[type="email"],
+.modal-content input[type="text"],
+.modal-content textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #c0a783;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; 
+}
+
+.modal-content button:hover {
+    background-color: #b4956b;
+}

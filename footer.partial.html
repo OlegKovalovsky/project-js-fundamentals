@@ -1,0 +1,26 @@
+<footer class="footer">
+    <div class="center-section-footer">
+        <h1 class="logo">GLAMOUR</h1>
+        <p class="tagline">underwear</p>
+    </div>
+    <div class="links">
+        <li><a href="#about-us-section">Про Нас</a></li>
+        <li><a href="#bestsellers-section">Топ Продажів</a></li>
+        <li><a href="#our-collection">Колекції</a></li>
+        <li><a href="#contact-section">Наші Контакти</a></li>
+        <li><a href="#">Зворотній Зв'язок</a></li>
+    </div>
+    <button class="contact-button" onclick="showNewsletter()">Написати Нам</button>
+    
+    <div id="newsletter-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeNewsletter()">&times;</span>
+            <form action="mailto:glamur_underwear@ukr.net" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Ваше ім'я">
+                <input type="email" name="email" placeholder="Електронна пошта">
+                <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+                <button type="submit">Написати Нам</button>
+            </form>
+        </div>
+    </div>
+</footer>

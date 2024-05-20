@@ -1,0 +1,132 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd9d95b;
+    padding: 20px; 
+    text-align: center;
+    height: 100px; 
+    margin-left: 150px; 
+    margin-right: 150px; 
+}
+
+.phone-number {
+    font-weight: bold; 
+}
+
+.logo {
+    font-size: 24px; 
+    text-transform: uppercase; 
+    margin: 0; 
+}
+
+.tagline {
+    font-size: 14px; 
+    color: #888; 
+    margin: 0; 
+}
+
+.social-icons {
+    list-style: none; 
+    display: flex; 
+    gap: 10px; 
+    margin-left: auto; 
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    margin-left: 150px; 
+    margin-right: 150px; 
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Корзина */
+.Basket {
+    display: flex; 
+    align-items: center; 
+}
+
+.Basket img {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        height: auto;
+        margin-left: 0px; 
+        margin-right: 0px; 
+    }
+
+    .navbar,
+    .main-menu {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .right-section {
+        order: -1; 
+        margin-top: 10px; 
+    }
+
+    .social-icons {
+        justify-content: center; 
+    }
+
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        height: auto;
+        margin-left: 0px; 
+        margin-right: 0px; 
+    }
+
+    .main-menu ul {
+        gap: 10px; 
+    }
+
+    .Basket {
+        margin-left: auto; 
+    }
+
+    .Basket img {
+        margin-left: 0; 
+        margin-right: 10px; 
+    }
+}
+
+
+
+
+

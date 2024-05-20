@@ -1,0 +1,91 @@
+.our-collection {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    margin-left: 150px; 
+    margin-right: 150px; 
+}
+
+.collection {
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.our-products {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.our-product-one,
+.our-product-two,
+.our-product-three,
+.our-product-four {
+    flex: 0 0 calc(25% - 20px); 
+    margin: 10px; 
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.our-product img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.name-product {
+    font-size: 16px; 
+    margin-bottom: 5px; 
+}
+
+.size-product,
+.color-product {
+    margin-bottom: 5px; 
+}
+
+.price-product {
+    font-size: 14px; 
+    color: #333; 
+    margin-bottom: 5px; 
+}
+
+.button-product {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+
+.collection-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.sets-of-womens-underwear-menu-item,
+.nightgowns-underwear-menu-item,
+.robes-underwear-menu-item,
+.womens-panties-underwear-menu-item {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 50px;
+    transition: border-bottom 0.3s ease;
+}
+
+.sets-of-womens-underwear-menu-item:hover,
+.nightgowns-underwear-menu-item:hover,
+.robes-underwear-menu-item:hover,
+.womens-panties-underwear-menu-item:hover {
+    border-bottom: 2px solid #000;
+}
+
