@@ -1,4 +1,9 @@
-
+.bestsellers-title{
+    font-weight: 700; 
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
 .info-section {
     display: flex;
     justify-content: space-between; 
@@ -34,14 +39,17 @@
 
 
 .main-text-info {
-    font-weight: bold; 
+    font-weight: 700; 
     font-size: 18px;
+    font-family: "Open Sans";
     display: inline-block; 
     text-align: center; 
 }
 
 .info-text {
-    font-size: 14px; 
+    font-weight: 300; 
+    font-size: 14px;
+    font-family: "Open Sans"; 
 }
 
 

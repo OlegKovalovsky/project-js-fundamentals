@@ -1,122 +1,138 @@
 {
     "sets-of-womens-underwear": [
         {
-            "imgSrc": "img/IMG_2811.jpg",
-            "description": "Опис першого товару",
+            "id": 1,
+            "imgSrc": "img/sets-of-womens/KT001.jpg",
+            "description": "Комплект жіночий 001",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "1020.00грн"
         },
         {
-            "imgSrc": "img/IMG_2811.jpg",
-            "description": "Опис другого товару",
+            "id": 2,
+            "imgSrc": "img/sets-of-womens/KT019.jpg",
+            "description": "Комплект жіночий 019",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "1310.00грн"
         },
         {
-            "imgSrc": "img/IMG_2811.jpg",
-            "description": "Опис третього товару",
+            "id": 3,
+            "imgSrc": "img/sets-of-womens/KT-three.jpg",
+            "description": "Комплект жіночий Трійка",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "1570.00грн"
         },
         {
-            "imgSrc": "img/IMG_2811.jpg",
-            "description": "Опис четвертого товару",
+            "id": 4,
+            "imgSrc": "img/sets-of-womens/013.jpg",
+            "description": "Комплект жіночий 013",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "1010.00грн"
         }
     ],
     "nightgowns-underwear": [
         {
-            "imgSrc": "img/811A1018.jpg",
-            "description": "Опис першого товару",
+            "id": 5,
+            "imgSrc": "img/nightgowns-underwear/HC012.jpg",
+            "description": "Нічна сорочка з шортами 012",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "650.00грн"
         },
         {
-            "imgSrc": "img/811A1018.jpg",
-            "description": "Опис другого товару",
+            "id": 6,
+            "imgSrc": "img/nightgowns-underwear/HC014.jpg",
+            "description": "Нічна сорочка з шортами 014",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "600.00грн"
         },
         {
-            "imgSrc": "img/811A1018.jpg",
-            "description": "Опис третього товару",
+            "id": 7,
+            "imgSrc": "img/nightgowns-underwear/HC016.jpg",
+            "description": "Нічна сорочка з шортами 016",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "620.00грн"
         },
         {
-            "imgSrc": "img/811A1018.jpg",
-            "description": "Опис четвертого товару",
+            "id": 8,
+            "imgSrc": "img/nightgowns-underwear/HC006.jpg",
+            "description": "Нічна сорочка 006",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "650.00грн"
         }
     ],
     "robes-underwear": [
         {
-            "imgSrc": "img/811A1006.jpg",
-            "description": "Опис першого товару",
+            "id": 9,
+            "imgSrc": "img/robes-underwear/X3006.jpg",
+            "description": "Халат жіночий 3006",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "400.00грн"
         },
         {
-            "imgSrc": "img/811A1006.jpg",
-            "description": "Опис другого товару",
+            "id": 10,
+            "imgSrc": "img/robes-underwear/X3008.jpg",
+            "description": "Халат жіночий 3008",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "750.00грн"
         },
         {
-            "imgSrc": "img/811A1006.jpg",
-            "description": "Опис третього товару",
+            "id": 11,
+            "imgSrc": "img/robes-underwear/X001.png",
+            "description": "Халат жіночий 001",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "450.00грн"
         },
         {
-            "imgSrc": "img/811A1006.jpg",
-            "description": "Опис четвертого товару",
+            "id": 12,
+            "imgSrc": "img/robes-underwear/X019.jpg",
+            "description": "Халат жіночий 019",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "450.00грн"
         }
     ],
     "womens-panties-underwear": [
         {
-            "imgSrc": "img/IMG_3476.jpg",
-            "description": "Опис першого товару",
+            "id": 13,
+            "imgSrc": "img/womens-panties/T008.jpg",
+            "description": "Труси жіночі 008",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "200.00грн"
         },
         {
-            "imgSrc": "img/IMG_3476.jpg",
-            "description": "Опис другого товару",
+            "id": 14,
+            "imgSrc": "img/womens-panties/T009.jpg",
+            "description": "Труси жіночі 009",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "210.00грн"
         },
         {
-            "imgSrc": "img/IMG_3476.jpg",
-            "description": "Опис третього товару",
+            "id": 15,
+            "imgSrc": "img/womens-panties/T011.jpg",
+            "description": "Труси жіночі 011",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "210.00грн"
         },
         {
-            "imgSrc": "img/IMG_3476.jpg",
-            "description": "Опис четвертого товару",
+            "id": 16,
+            "imgSrc": "img/womens-panties/T021.jpg",
+            "description": "Труси жіночі 021",
             "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
             "colors": ["білий", "чорний", "молочний", "червоний", "зелений", "фіолетовий", "марсала", "пудровий"],
-            "price": "0.00грн"
+            "price": "240.00грн"
         }
     ]
 }

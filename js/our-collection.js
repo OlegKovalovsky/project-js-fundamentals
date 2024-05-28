@@ -1,9 +1,11 @@
+import addToCart from './basket-for-orders.js';
+
 export default function ourCollection(productsData) {
     const menuItems = document.querySelectorAll('.collection-menu a');
     const productsContainer = document.querySelector('.products-container');
 
     function createProductCards(products, sectionClass) {
-        productsContainer.innerHTML = ''; // Очищення контейнера
+        productsContainer.innerHTML = '';
 
         products.forEach((product, index) => {
             const productCard = document.createElement('div');
@@ -19,34 +21,53 @@ export default function ourCollection(productsData) {
                 </select>
                 <p class="price-product">${product.price}</p>
                 <div class="button-product">
-                    <button type="button" class="buy-button">Купити зараз</button>
+                    <button type="button" class="buy-button add-to-cart-btn">Додати в корзину</button>
                 </div>
             `;
             productsContainer.appendChild(productCard);
         });
 
-        // Створення секції
         const sectionElement = document.createElement('div');
         sectionElement.classList.add(sectionClass);
         productsContainer.appendChild(sectionElement);
+
+        // Додаю addToCart при кліку на кнопку "Додати в корзину"
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const productCard = button.closest('.product-card');
+        const itemDescription = productCard.querySelector('.name-product').textContent;
+        const itemPrice = productCard.querySelector('.price-product').textContent;
+        const itemSize = productCard.querySelector('.size-product').value;
+        const itemColor = productCard.querySelector('.color-product').value;
+        const itemId = products.find(product => product.description === itemDescription).id;
+
+        const item = {
+            id: itemId,
+            description: itemDescription,
+            price: parseFloat(itemPrice),
+            size: itemSize,
+            color: itemColor,
+            imgSrc: productCard.querySelector('img').src 
+        };
+        addToCart(item); 
+    });
+});
     }
 
-    // Створення початкового класу секції
-const initialSectionClass = menuItems[0].getAttribute('class').replace('-menu-item', '');
-if (productsData[initialSectionClass]) {
-    createProductCards(productsData[initialSectionClass], initialSectionClass);
-} else {
-    console.error('Initial section class does not exist in data:', initialSectionClass);
-}
+    const initialSectionClass = menuItems[0].getAttribute('class').replace('-menu-item', '');
+    if (productsData[initialSectionClass]) {
+        createProductCards(productsData[initialSectionClass], initialSectionClass);
+    } else {
+        console.error('Initial section class does not exist in data:', initialSectionClass);
+    }
 
-    // Додаємо обробники подій для кожного елементу меню
     menuItems.forEach(item => {
         item.addEventListener('click', (event) => {
             event.preventDefault();
             const sectionClass = item.getAttribute('class').replace('-menu-item', '');
             if (productsData[sectionClass]) {
                 createProductCards(productsData[sectionClass], sectionClass);
-                // Після створення секції прокручуємо до неї
                 const sectionElement = document.querySelector(`.${sectionClass}`);
                 if (sectionElement) {
                     sectionElement.scrollIntoView({ behavior: 'smooth' });
@@ -71,4 +92,3 @@ fetch('collection.json')
         ourCollection(data);
     })
     .catch(error => console.error('Error loading JSON:', error));
-

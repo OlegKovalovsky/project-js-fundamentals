@@ -6,7 +6,7 @@
     align-items: center;
     margin-top: 40px;
     padding: 100px; 
-    height: 50px; 
+    height: 50px;
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -27,12 +27,22 @@
 
 .footer .links li {
     margin: 5px 0;
+    text-decoration: none;
+    font-weight: 800; 
+    font-size: 18px;
+    font-family: "Open Sans";
 }
 
 .footer .links a {
     text-decoration: none;
-    color: #000;
+    color: #333;
 }
+
+.footer .links a.active {
+    color: #b4956b; 
+    text-decoration: underline; 
+}
+
 
 .footer .contact-button {
     padding: 10px 20px;
@@ -48,10 +58,11 @@
     background-color: #b4956b;
 }
 
-.modal {
+/* Модальне вікно */
+.footer-modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -61,8 +72,7 @@
     padding-top: 60px;
 }
 
-/* Модальне вікно */
-.modal-content {
+.footer-modal-content {
     display: flex;
     flex-direction: column;
     background-color: #fefefe;
@@ -74,7 +84,6 @@
     border-radius: 4px;
 }
 
-/* Кнопка закриття */
 .close {
     color: #aaa;
     align-self: flex-end; 
@@ -89,9 +98,9 @@
     text-decoration: none;
 }
 
-.modal-content input[type="email"],
-.modal-content input[type="text"],
-.modal-content textarea {
+.footer-modal-content input[type="email"],
+.footer-modal-content input[type="text"],
+.footer-modal-content textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -99,7 +108,7 @@
     width: 100%; 
 }
 
-.modal-content button {
+.footer-modal-content button {
     padding: 10px 20px;
     background-color: #c0a783;
     color: white;
@@ -109,7 +118,7 @@
     align-self: flex-end; 
 }
 
-.modal-content button:hover {
+.footer-modal-content button:hover {
     background-color: #b4956b;
 }
 

@@ -1,5 +1,5 @@
 .our-collection {
-    font-family: Arial, sans-serif; 
+    font-family: sans-serif; 
     margin: 0; 
     padding: 0; 
     margin-left: 150px; 
@@ -10,6 +10,9 @@
     background-color: #f9f9f9; 
     padding: 20px; 
     text-align: center; 
+    font-weight: 700; 
+    font-size: 16px;
+    text-align: center;
 }
 
 .our-products {
@@ -34,30 +37,45 @@
 }
 
 .name-product {
+    font-family: "Open Sans";
     font-size: 16px; 
     margin-bottom: 5px; 
 }
 
 .size-product,
 .color-product {
+    font-size: 14px; 
+    color: #333; 
     margin-bottom: 5px; 
+    border: 2px solid #c0a783; 
+    border-radius: 4px;
 }
 
+
 .price-product {
-    font-size: 14px; 
+    font-size: 16px; 
     color: #333; 
     margin-bottom: 5px; 
 }
 
-.button-product {
-    background-color: #007bff; 
-    color: #fff; 
-    border: none; 
-    padding: 5px 10px; 
-    cursor: pointer; 
+
+
+.add-to-cart-btn {
+    padding: 15px 60px;
+    background-color: #c0a783;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
     display: block; 
     margin: 0 auto; 
 }
+
+.add-to-cart-btn:hover {
+    background-color: #b4956b;
+}
+
 
 .collection-menu {
     display: flex;
@@ -81,7 +99,8 @@
 .nightgowns-underwear-menu-item:hover,
 .robes-underwear-menu-item:hover,
 .womens-panties-underwear-menu-item:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #b4956b;
+    color: #b4956b; 
 }
 
 @media (max-width: 768px) {

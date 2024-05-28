@@ -40,11 +40,11 @@
 }
 
 .prev::before {
-    content: "\2039"; /* Символ "<" */
+    content: "\2039"; /* "<" */
 }
 
 .next::before {
-    content: "\203A"; /* Символ ">" */
+    content: "\203A"; /* ">" */
 }
 
 .prev,

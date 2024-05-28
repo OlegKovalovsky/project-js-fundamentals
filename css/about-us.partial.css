@@ -27,14 +27,21 @@
 }
 
 .title {
-    font-weight: bold; 
+    font-weight: 500; 
     font-size: 48px;
     text-align: center;
+    font-family: "Open Sans";   
 }
 
-.title-text {
-    font-size: 24px; 
-     
+.title-text-one,
+.title-text-two,
+.title-text-three {
+    font-weight: 300; 
+    font-size: 20px;
+    font-family: "Open Sans";
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    text-indent: 25px; 
 }
 
 .image-and-text {
@@ -49,7 +56,9 @@
 }
 
 .text-container {
+    font-weight: 300; 
     font-size: 20px;
+    font-family: "Open Sans";
 }
 
 @media (max-width: 768px) {

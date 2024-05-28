@@ -1,13 +1,23 @@
 function showNewsletter() {
-    let modal = document.getElementById('newsletter-modal');
+    var modal = document.getElementById('footer-modal');
     modal.style.display = 'block';
 }
 
+// Закриття модального вікна
 function closeNewsletter() {
-    let modal = document.getElementById('newsletter-modal');
+    var modal = document.getElementById('footer-modal');
     modal.style.display = 'none';
 }
 
-// Зробіть функції доступними глобально
+document.querySelectorAll('.footer .links a').forEach(menuItem => {
+    menuItem.addEventListener('mouseover', function() {
+        menuItem.classList.add('active'); // + клас "active" при наведенні
+    });
+
+    menuItem.addEventListener('mouseout', function() {
+        menuItem.classList.remove('active'); // - клас "active" при відведенні
+    });
+});
+
 window.showNewsletter = showNewsletter;
 window.closeNewsletter = closeNewsletter;

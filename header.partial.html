@@ -10,21 +10,55 @@
         <ul class="social-icons">
             <li><a href="https://www.facebook.com/profile.php?id=100063739074732" target="_blank"><img src="img/facebook.jpg" alt="Facebook"></a></li>
             <li><a href="https://www.instagram.com/glamour.ukraine?igsh=Y3J5YWdxbXYzOXV0" target="_blank"><img src="img/instagram.jpg" alt="Instagram"></a></li>
-            <li><a href="#" target="_blank"><img src="messenger-icon.png" alt="Messenger"></a></li>
         </ul>
     </div>
-    
 </header>
 <nav class="main-menu">
-   <ul class="Basket"></ul> 
-   <ul>
+    <ul>
         <li><a href="#about-us-section">Про Нас</a></li>
         <li><a href="#bestsellers-section">Топ Продажів</a></li>
         <li><a href="#our-collection">Колекції</a></li>
         <li><a href="#contact-section">Наші Контакти</a></li>
-        <li><a href="#feedback-section">Зворотній Зв'язок</a></li>
     </ul>
-    <ul class="Basket">
-        <li><a href="#"><img src="basket-icon.png" alt="Basket"></a></li> <!-- іконка корзини -->
-    </ul> 
+    <div class="Basket">
+        <div><a href="#" class="open-cart"><img src="img/for-orders.png" alt="Basket"></a></div>
+        <div id="cart-item-count">0</div>
+    </div>
 </nav>
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ваше замовлення</h2>
+        <ul class="cart-items">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Товар</h2>
+                    <img src="img/001Д.jpg" alt="Товар">
+                    <h3 class="name-product">Назва товару</h3>
+                    <p>Розмір: <span class="basket-size-product">XL</span></p>
+                    <p>Колір: <span class="basket-color-product">Чорний</span></p>
+                    <div class="remove-button-row">
+                         <button class="remove-button">Х</button> 
+                    </div>
+                    <div class="quantity-row">
+                        <button class="decrease-button">-</button>
+                        <span class="item-count">1 шт.</span>
+                        <button class="increase-button">+</button>
+                    </div>
+                    <div class="price-row">
+                        <p>Ціна: <span class="price">220.00 грн</span></p>
+                        <p>Сума: <span class="total-price">220.00 грн</span></p>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <div class="total">
+            <h3>Загальна сума: <span id="total-amount">0.00грн</span></h3>
+            <input type="text" id="customer-name" placeholder="Ваше ім'я">
+            <input type="text" id="customer-phone" placeholder="Ваш номер телефону">
+            <button class="checkout-btn">Оформити Замовлення</button>
+            <button class="clean-up-btn">Очистити форму</button>
+        </div>
+    </div>
+</div>
