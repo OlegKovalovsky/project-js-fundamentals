@@ -21,5 +21,14 @@ document.querySelectorAll('.main-menu a').forEach(menuItem => {
     });
 });
 
+window.addEventListener('scroll', function() {
+    const basket = document.querySelector('.Basket');
+    const scrolled = window.scrollY;
 
+    if (scrolled > 100) { 
+        basket.style.top = scrolled + 'px';
+    } else {
+        basket.style.top = '10px'; 
+    }
+});
 
