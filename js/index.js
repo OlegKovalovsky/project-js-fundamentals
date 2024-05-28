@@ -7,7 +7,7 @@ document.addEventListener('partialsLoaded', async () => {
         const basketModule = await import('./basket-for-orders.js');
         const basketButtonsModule = await import('./basket-buttons.js'); 
 
-        const response = await fetch('/collection.json');
+        const response = await fetch('./collection.json');
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
