@@ -52,5 +52,5 @@ function initializeCartModal() {
         }
     });
 
-    import('./basket-buttons.js').then(module => module.default());
+    
 }
